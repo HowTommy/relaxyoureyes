@@ -90,6 +90,12 @@ namespace RelaxYourEyes
                 this.timerResting.Start();
                 LockWorkStation();
             }
+            else
+            {
+                this.notifyIconFormMain.Text = string.Format(
+                    "Relax your eyes - Next break in {0} minutes",
+                    Convert.ToInt32((endDate - DateTime.UtcNow).TotalMinutes));
+            }
         }
 
         /// <summary>
