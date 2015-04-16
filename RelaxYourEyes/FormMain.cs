@@ -86,6 +86,7 @@ namespace RelaxYourEyes
             else if (endDate < DateTime.UtcNow)
             {
                 // we lock the work station
+                this.notifyIconFormMain.Text = "Relax your eyes";
                 this.timerRest.Stop();
                 this.timerResting.Start();
                 LockWorkStation();
@@ -93,7 +94,7 @@ namespace RelaxYourEyes
             else
             {
                 this.notifyIconFormMain.Text = string.Format(
-                    "Relax your eyes - Next break in {0} minutes",
+                    "Relax your eyes - Next break in {0} minute(s)",
                     Convert.ToInt32((endDate - DateTime.UtcNow).TotalMinutes));
             }
         }
@@ -170,7 +171,7 @@ namespace RelaxYourEyes
         /// <param name="minutes">the number of minutes before the lock of your session</param>
         private void ShowPauseBalloonTip(int minutes)
         {
-            this.notifyIconFormMain.BalloonTipText = string.Format("You will have to relax your eyes in {0} minutes.", minutes);
+            this.notifyIconFormMain.BalloonTipText = string.Format("You will have to relax your eyes in {0} minute(s).", minutes);
             this.notifyIconFormMain.ShowBalloonTip(4);
         }
 
