@@ -1,0 +1,9 @@
+RelaxYourEyes.*.suo
+RelaxYourEyes/bin/Debug/*
+RelaxYourEyes/bin/Release/RelaxYourEyes.exe.config
+RelaxYourEyes/bin/Release/RelaxYourEyes.pdb
+RelaxYourEyes/bin/Release/RelaxYourEyes.vshost.exe
+RelaxYourEyes/bin/Release/RelaxYourEyes.vshost.exe.config
+RelaxYourEyes/bin/Release/RelaxYourEyes.vshost.exe.manifest
+RelaxYourEyes/obj/Debug/*
+RelaxYourEyes/obj/Release/*
