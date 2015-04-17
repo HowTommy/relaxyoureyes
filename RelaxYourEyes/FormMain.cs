@@ -16,7 +16,7 @@ namespace RelaxYourEyes
         private bool _hasDelayedBreak;
 
         private const int MINUTES_WITHOUT_BREAK = 57;
-        private const int BREAK_LENGTH = 3;
+        private const int BREAK_LENGTH = 2;
         private const int FIRST_WARNING_MINUTES = 3;
         private const int SECOND_WARNING_MINUTES = 1;
         private const int DELAY_MINUTES = 3;
